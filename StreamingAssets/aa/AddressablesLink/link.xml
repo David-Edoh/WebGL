@@ -27,11 +27,24 @@
     <type fullname="DecalDestroyer" preserve="all" />
     <type fullname="DroppedMoney" preserve="all" />
     <type fullname="Eko.CharacterStudio.CharacterStudioMenu" preserve="all" />
+    <type fullname="Eko.CharacterStudio.MenuFlow" preserve="all" />
     <type fullname="Eko.CharacterStudio.NetworkCharacterAppearance" preserve="all" />
     <type fullname="Eko.CharacterStudio.StudioAmbience" preserve="all" />
     <type fullname="Eko.CharacterStudio.StudioCatalog" preserve="all" />
     <type fullname="Eko.Debugging.PerformanceDebugger" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaChunk" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaChunkRenderer" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaChunkStreamer" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaKitPalette" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaLocationLabel" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaNavigator" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaPlaces" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaSkyline" preserve="all" />
+    <type fullname="Eko.Geospatial.YabaSpeedLimits" preserve="all" />
+    <type fullname="Eko.Rendering.DistanceCull" preserve="all" />
+    <type fullname="Eko.Rendering.FarProxyCell" preserve="all" />
     <type fullname="Eko.Rendering.QualityLodSet" preserve="all" />
+    <type fullname="Eko.Shops.ShopCounter" preserve="all" />
     <type fullname="EmoteWheel" preserve="all" />
     <type fullname="EmoteWheelArea" preserve="all" />
     <type fullname="ExperienceManager" preserve="all" />
@@ -107,6 +120,8 @@
     <type fullname="VehicleMeshesDeformation" preserve="all" />
     <type fullname="WorldGround" preserve="all" />
     <type fullname="Eko.Rendering.QualityLodSet/Entry" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Shops.ShopEntry" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Shops.ShopWear" preserve="nothing" serialized="true" />
     <type fullname="CompanionItem" preserve="nothing" serialized="true" />
     <type fullname="EmoteWheelItem" preserve="nothing" serialized="true" />
     <type fullname="LoadingScreenItem" preserve="nothing" serialized="true" />
@@ -119,6 +134,15 @@
     <type fullname="VehicleEnterExit.VehicleSync/Seat" preserve="nothing" serialized="true" />
     <type fullname="VehicleEntry" preserve="nothing" serialized="true" />
     <type fullname="WorldObjectEntry" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaBuildingRecord" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaCellPlacements" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaKitPalette/Part" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaKitPalette/Piece" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaChunkStreamer/Entry" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaPlaces/Landmark" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaPlaces/NavEdge" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaPlaces/SpeedZone" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaPlaces/Street" preserve="nothing" serialized="true" />
     <type fullname="CC.CC_CharacterData" preserve="nothing" serialized="true" />
     <type fullname="CC.CC_Property" preserve="nothing" serialized="true" />
     <type fullname="CC.CC_Apparel_Material_Collection" preserve="nothing" serialized="true" />
@@ -307,6 +331,7 @@
     <type fullname="UnityEngine.SkinnedMeshRenderer" preserve="all" />
     <type fullname="UnityEngine.Skybox" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.TrailRenderer" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
@@ -314,18 +339,19 @@
     <type fullname="UnityEngine.Color" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Color32" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rect" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RenderingLayerMask" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Vector2" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Vector3" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Vector4" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.LayerMask" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Quaternion" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rect" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Vector2Int" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Vector3" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Matrix4x4" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ParticleSystem" preserve="all" />
@@ -345,6 +371,7 @@
   </assembly>
   <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all" />
+    <type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all" />
     <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
     <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
@@ -352,6 +379,7 @@
     <type fullname="UnityEngine.UI.GridLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
     <type fullname="UnityEngine.UI.Mask" preserve="all" />
     <type fullname="UnityEngine.UI.RawImage" preserve="all" />
     <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
