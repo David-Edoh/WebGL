@@ -56,14 +56,30 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
+      // Phones can't read DXT textures (Unity would decompress them to RGBA32 and run out of memory),
+      // so browsers with ASTC and without DXT load the ASTC build. ?textures=mobile|desktop forces one.
+      var ekoMobileTextures = (function () {
+        var forced = new URLSearchParams(location.search).get("textures");
+        if (forced) return forced === "mobile";
+        try {
+          var c = document.createElement("canvas");
+          var gl = c.getContext("webgl2") || c.getContext("webgl");
+          if (!gl) return false;
+          var astc = !!gl.getExtension("WEBGL_compressed_texture_astc");
+          var dxt = !!gl.getExtension("WEBGL_compressed_texture_s3tc");
+          var lose = gl.getExtension("WEBGL_lose_context");
+          if (lose) lose.loseContext();
+          return astc && !dxt;
+        } catch (e) { return false; }
+      })();
+      var buildUrl = ekoMobileTextures ? "BuildMobile" : "Build";
       var loaderUrl = buildUrl + "/WebGL.loader.js";
       var config = {
         arguments: [],
         dataUrl: buildUrl + "/WebGL.data.br",
         frameworkUrl: buildUrl + "/WebGL.framework.js.br",
         codeUrl: buildUrl + "/WebGL.wasm.br",
-        streamingAssetsUrl: "StreamingAssets",
+        streamingAssetsUrl: ekoMobileTextures ? "StreamingAssets-Mobile" : "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
         // you can pass fullscreenElementID: "my-unity-fullscreen-container-id", in this configuration field to
@@ -110,7 +126,7 @@
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
+        config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, 2);
 
 
       } else {

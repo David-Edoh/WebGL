@@ -1,16 +1,26 @@
 {
   "headers": [
+    { "source": "/BuildMobile/(.*)\\.gz", "headers": [ { "key": "Content-Encoding", "value": "gzip" } ] },
     { "source": "/Build/(.*)\\.gz", "headers": [ { "key": "Content-Encoding", "value": "gzip" } ] },
+    { "source": "/BuildMobile/(.*)\\.br", "headers": [ { "key": "Content-Encoding", "value": "br" } ] },
     { "source": "/Build/(.*)\\.br", "headers": [ { "key": "Content-Encoding", "value": "br" } ] },
+    { "source": "/BuildMobile/(.*)\\.wasm(.*)", "headers": [ { "key": "Content-Type", "value": "application/wasm" } ] },
     { "source": "/Build/(.*)\\.wasm(.*)", "headers": [ { "key": "Content-Type", "value": "application/wasm" } ] },
+    { "source": "/BuildMobile/(.*)\\.js(.*)", "headers": [ { "key": "Content-Type", "value": "application/javascript" } ] },
     { "source": "/Build/(.*)\\.js(.*)", "headers": [ { "key": "Content-Type", "value": "application/javascript" } ] },
+    { "source": "/BuildMobile/(.*)\\.data(.*)", "headers": [ { "key": "Content-Type", "value": "application/octet-stream" } ] },
     { "source": "/Build/(.*)\\.data(.*)", "headers": [ { "key": "Content-Type", "value": "application/octet-stream" } ] },
     { "source": "/", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
     { "source": "/index.html", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
+    { "source": "/BuildMobile/(.*)", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
     { "source": "/Build/(.*)", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
+    { "source": "/StreamingAssets-Mobile/aa/settings.json", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
     { "source": "/StreamingAssets/aa/settings.json", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
+    { "source": "/StreamingAssets-Mobile/aa/catalog.bin", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
     { "source": "/StreamingAssets/aa/catalog.bin", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
+    { "source": "/StreamingAssets-Mobile/aa/catalog.hash", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
     { "source": "/StreamingAssets/aa/catalog.hash", "headers": [ { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" } ] },
+    { "source": "/StreamingAssets-Mobile/aa/WebGL/(.*)\\.bundle", "headers": [ { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" } ] },
     { "source": "/StreamingAssets/aa/WebGL/(.*)\\.bundle", "headers": [ { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" } ] }
   ]
 }

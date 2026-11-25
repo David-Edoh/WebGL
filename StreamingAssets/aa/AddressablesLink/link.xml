@@ -1,4 +1,14 @@
 <linker>
+  <assembly fullname="Eko.Gameplay.Esiri, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Eko.Gameplay.Esiri.NpcTalker" preserve="all" />
+    <type fullname="Eko.Gameplay.Esiri.PoliceOfficer" preserve="all" />
+    <type fullname="Eko.Gameplay.Esiri.PolicePatrolCar" preserve="all" />
+    <type fullname="Eko.Gameplay.Esiri.SandboxStudioLook" preserve="all" />
+    <type fullname="Eko.Gameplay.Esiri.SandboxTrafficCar" preserve="all" />
+    <type fullname="Eko.Gameplay.Esiri.SandboxWalker" preserve="all" />
+    <type fullname="Eko.Gameplay.Esiri.StreetLife.StreetLifeDirector" preserve="all" />
+    <type fullname="NigerianPoliceHiluxVisuals" preserve="all" />
+  </assembly>
   <assembly fullname="Eko.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="AISensor" preserve="all" />
     <type fullname="AIWaypointSystem" preserve="all" />
@@ -31,6 +41,8 @@
     <type fullname="Eko.CharacterStudio.NetworkCharacterAppearance" preserve="all" />
     <type fullname="Eko.CharacterStudio.StudioAmbience" preserve="all" />
     <type fullname="Eko.CharacterStudio.StudioCatalog" preserve="all" />
+    <type fullname="Eko.Content.StageStandIn" preserve="all" />
+    <type fullname="Eko.Content.StoreInterior" preserve="all" />
     <type fullname="Eko.Debugging.PerformanceDebugger" preserve="all" />
     <type fullname="Eko.Geospatial.YabaChunk" preserve="all" />
     <type fullname="Eko.Geospatial.YabaChunkRenderer" preserve="all" />
@@ -41,6 +53,8 @@
     <type fullname="Eko.Geospatial.YabaPlaces" preserve="all" />
     <type fullname="Eko.Geospatial.YabaSkyline" preserve="all" />
     <type fullname="Eko.Geospatial.YabaSpeedLimits" preserve="all" />
+    <type fullname="Eko.Gym.GymDoubleDoor" preserve="all" />
+    <type fullname="Eko.Gym.GymSetup" preserve="all" />
     <type fullname="Eko.Rendering.DistanceCull" preserve="all" />
     <type fullname="Eko.Rendering.FarProxyCell" preserve="all" />
     <type fullname="Eko.Rendering.QualityLodSet" preserve="all" />
@@ -119,10 +133,15 @@
     <type fullname="VehicleLods" preserve="all" />
     <type fullname="VehicleMeshesDeformation" preserve="all" />
     <type fullname="WorldGround" preserve="all" />
+    <type fullname="Eko.Content.StoreInterior/Piece" preserve="nothing" serialized="true" />
     <type fullname="Eko.Rendering.QualityLodSet/Entry" preserve="nothing" serialized="true" />
     <type fullname="Eko.Shops.ShopEntry" preserve="nothing" serialized="true" />
     <type fullname="Eko.Shops.ShopWear" preserve="nothing" serialized="true" />
     <type fullname="CompanionItem" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaPlaces/Landmark" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaPlaces/NavEdge" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaPlaces/SpeedZone" preserve="nothing" serialized="true" />
+    <type fullname="Eko.Geospatial.YabaPlaces/Street" preserve="nothing" serialized="true" />
     <type fullname="EmoteWheelItem" preserve="nothing" serialized="true" />
     <type fullname="LoadingScreenItem" preserve="nothing" serialized="true" />
     <type fullname="RedicionStudio.InventorySystem.Item" preserve="nothing" serialized="true" />
@@ -134,20 +153,16 @@
     <type fullname="VehicleEnterExit.VehicleSync/Seat" preserve="nothing" serialized="true" />
     <type fullname="VehicleEntry" preserve="nothing" serialized="true" />
     <type fullname="WorldObjectEntry" preserve="nothing" serialized="true" />
+    <type fullname="CC.CC_CharacterData" preserve="nothing" serialized="true" />
+    <type fullname="CC.ColliderSetup" preserve="nothing" serialized="true" />
     <type fullname="Eko.Geospatial.YabaBuildingRecord" preserve="nothing" serialized="true" />
     <type fullname="Eko.Geospatial.YabaCellPlacements" preserve="nothing" serialized="true" />
     <type fullname="Eko.Geospatial.YabaKitPalette/Part" preserve="nothing" serialized="true" />
     <type fullname="Eko.Geospatial.YabaKitPalette/Piece" preserve="nothing" serialized="true" />
     <type fullname="Eko.Geospatial.YabaChunkStreamer/Entry" preserve="nothing" serialized="true" />
-    <type fullname="Eko.Geospatial.YabaPlaces/Landmark" preserve="nothing" serialized="true" />
-    <type fullname="Eko.Geospatial.YabaPlaces/NavEdge" preserve="nothing" serialized="true" />
-    <type fullname="Eko.Geospatial.YabaPlaces/SpeedZone" preserve="nothing" serialized="true" />
-    <type fullname="Eko.Geospatial.YabaPlaces/Street" preserve="nothing" serialized="true" />
-    <type fullname="CC.CC_CharacterData" preserve="nothing" serialized="true" />
     <type fullname="CC.CC_Property" preserve="nothing" serialized="true" />
     <type fullname="CC.CC_Apparel_Material_Collection" preserve="nothing" serialized="true" />
     <type fullname="CC.CC_Apparel_Material_Definition" preserve="nothing" serialized="true" />
-    <type fullname="CC.ColliderSetup" preserve="nothing" serialized="true" />
     <type fullname="CC.FootOffset" preserve="nothing" serialized="true" />
     <type fullname="CC.scrObj_Apparel/Apparel" preserve="nothing" serialized="true" />
     <type fullname="CC.scrObj_Hair/Hairstyle" preserve="nothing" serialized="true" />
@@ -242,11 +257,11 @@
     <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalLightData" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.Vignette" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.WhiteBalance" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.TemporalAA/Settings" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.BloomFilterModeParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.DownscaleParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.HDRACESPresetParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.NeutralRangeReductionModeParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.Universal.TemporalAA/Settings" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.TonemappingModeParameter" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
@@ -293,8 +308,11 @@
   </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animations.PositionConstraint" preserve="all" />
+    <type fullname="UnityEngine.Animations.RotationConstraint" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
     <type fullname="UnityEngine.Avatar" preserve="all" />
+    <type fullname="UnityEngine.AvatarMask" preserve="all" />
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -321,7 +339,6 @@
     <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
     <type fullname="UnityEngine.MeshRenderer" preserve="all" />
-    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.ReflectionProbe" preserve="all" />
